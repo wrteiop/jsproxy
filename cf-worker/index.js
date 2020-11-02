@@ -110,7 +110,7 @@ function httpHandler(req, pathname) {
   reqHdrNew.set('x-jsproxy', '1')
 
   // 此处逻辑和 http-dec-req-hdr.lua 大致相同
-  // https://github.com/EtherDream/jsproxy/blob/master/lua/http-dec-req-hdr.lua
+  // https://github.com/YidaozhanYa/jsproxy/blob/master/lua/http-dec-req-hdr.lua
   const refer = reqHdrNew.get('referer')
   const query = refer.substr(refer.indexOf('?') + 1)
   if (!query) {
